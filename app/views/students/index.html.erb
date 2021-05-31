@@ -1,0 +1,36 @@
+<h1>Checked-In Students</h1>
+
+<table>
+<tr>
+ <th>First Name</th>
+ <th>Last Name</th>
+ <th>Graduation Date</th>
+ <th>Check In Time</th>
+
+<%@Students.each do |student|%>
+    <tr>
+    <td>
+    <%= student.first_name%>
+    </td>
+    <td>
+    <%= student.last_name%>
+    </td>
+    <td>
+    <%= student.graduation_date.to_s%>
+    </td>
+    <td>
+    <%= student.check_in_time.to_s%>
+    </td>
+    <td>
+        <%=link_to 'Show', student%>
+    </td>
+    <td>
+        <%=link_to 'Edit', student%>
+    </td>
+    <td>
+        <%=link_to 'Destroy', student%>
+    </td>
+    </tr>
+<%end%>
+
+</table>
