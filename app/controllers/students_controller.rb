@@ -6,10 +6,4 @@ class StudentsController < ApplicationController
   def show
     @Student = Student.find(params[:id])
   end
-
-  def update
-  end
-  
-  def destroy
-  end
 end
