@@ -1,0 +1,23 @@
+<%= form_with model: student do |form|%>
+    <div>
+        <%=form.label :first_name%>
+        <%=form.text_field :first_name%>
+    </div>
+    <div>
+        <%=form.label :last_name%>
+        <%=form.text_field :last_name%>
+    </div>
+        
+    <div>
+        <%=form.label :graduation_date%>
+        <%=form.datetime_local_field :graduation_date%>
+    </div>
+
+    <div>
+        <%=form.label :check_in_time%>
+        <%=form.datetime_local_field :created_at%>
+    </div>
+    <div>
+    <%= form.submit %>
+  </div>
+<%end%>

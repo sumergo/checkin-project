@@ -1,0 +1,20 @@
+<h1>Check-In</h1>
+
+<%= form_with model: @Student do |form|%>
+    <div>
+        <%=form.label :first_name%>
+        <%=form.text_field :first_name%>
+    </div>
+    <div>
+        <%=form.label :last_name%>
+        <%=form.text_field :last_name%>
+    </div>
+        
+    <div>
+        <%=form.label :graduation_date%>
+        <%=form.datetime_local_field :graduation_date%>
+    </div>
+    <div>
+    <%= form.submit %>
+  </div>
+<%end%>
