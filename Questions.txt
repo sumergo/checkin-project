@@ -1,0 +1,17 @@
+Questions:
+
+
+1. Do we want :created_at and check_in_time to be unique?
+2. What validations do you want in place?
+3. 
+
+
+Notes: 
+
+Steps:
+
+New feature? 
+Controller > Routes > Views
+Active Record Validations (Model)
+Form validations (Input)
+Same form? partials
